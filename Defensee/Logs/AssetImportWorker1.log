@@ -1,0 +1,297 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.16f1 (d2c21f0ef2f1) revision 13812255'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19042) 64bit Education' Language: 'ko' Physical Memory: 16313 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity 2022.3.16f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+C:/Users/user/Desktop/IsDiffencePractice/Defensee
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+51401
+Successfully changed project path to: C:/Users/user/Desktop/IsDiffencePractice/Defensee
+C:/Users/user/Desktop/IsDiffencePractice/Defensee
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [20188] Host "[IP] 10.194.45.104 [Port] 0 [Flags] 2 [Guid] 3331657601 [EditorId] 3331657601 [Version] 1048832 [Id] WindowsEditor(7,PC-04) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [20188] Host "[IP] 10.194.45.104 [Port] 0 [Flags] 2 [Guid] 3331657601 [EditorId] 3331657601 [Version] 1048832 [Id] WindowsEditor(7,PC-04) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 15 workers.
+Refreshing native plugins compatible for Editor in 10.51 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.16f1 (d2c21f0ef2f1)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity 2022.3.16f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/user/Desktop/IsDiffencePractice/Defensee/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f82)
+    Vendor:   NVIDIA
+    VRAM:     3962 MB
+    Driver:   31.0.15.1659
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity 2022.3.16f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity 2022.3.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity 2022.3.16f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56676
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity 2022.3.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.010189 seconds.
+- Loaded All Assemblies, in  0.361 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.262 seconds
+Domain Reload Profiling: 620ms
+	BeginReloadAssembly (120ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (32ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (63ms)
+	LoadAllAssembliesAndSetupDomain (130ms)
+		LoadAssemblies (117ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (128ms)
+			TypeCache.Refresh (127ms)
+				TypeCache.ScanAssembly (114ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (263ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (208ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (143ms)
+			ProcessInitializeOnLoadMethodAttributes (47ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.647 seconds
+Refreshing native plugins compatible for Editor in 5.57 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.509 seconds
+Domain Reload Profiling: 1151ms
+	BeginReloadAssembly (156ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (20ms)
+	RebuildCommonClasses (32ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (45ms)
+	LoadAllAssembliesAndSetupDomain (398ms)
+		LoadAssemblies (334ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (163ms)
+			TypeCache.Refresh (144ms)
+				TypeCache.ScanAssembly (130ms)
+			ScanForSourceGeneratedMonoScriptInfo (13ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (510ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (376ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (64ms)
+			ProcessInitializeOnLoadAttributes (271ms)
+			ProcessInitializeOnLoadMethodAttributes (19ms)
+			AfterProcessingInitializeOnLoad (12ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 5.45 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3084 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (56.9 KB). Loaded Objects now: 3545.
+Memory consumption went from 122.7 MB to 122.7 MB.
+Total: 2.494500 ms (FindLiveObjects: 0.231000 ms CreateObjectMapping: 0.208000 ms MarkObjects: 1.976200 ms  DeleteObjects: 0.078000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 43b350a4d6e6d1791af0b5038c4bea17 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 2392.779964 seconds.
+  path: Assets/TowerDefence_Vsquad
+  artifactKey: Guid(0f66739de585cba45b1014b16b3f4964) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TowerDefence_Vsquad using Guid(0f66739de585cba45b1014b16b3f4964) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e46fbb673eef1550cd5440d38c451baf') in 0.002018 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.255932 seconds.
+  path: Assets/TowerDefence_Vsquad/Meshes/HM_cannon_1.fbx
+  artifactKey: Guid(31b5711eb7fc9e74c9b9596af3800686) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TowerDefence_Vsquad/Meshes/HM_cannon_1.fbx using Guid(31b5711eb7fc9e74c9b9596af3800686) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '701fe41d4219513bd8e22da58046ec8a') in 0.299924 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 39.055953 seconds.
+  path: Assets/TowerDefence_Vsquad/Materials/Cubes/HM_Road_1.mat
+  artifactKey: Guid(19401906f20e0714bbc1903b18fbcee1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TowerDefence_Vsquad/Materials/Cubes/HM_Road_1.mat using Guid(19401906f20e0714bbc1903b18fbcee1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc14e6c818ea1582d22fd1e2b2c08200') in 0.110623 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 9.807708 seconds.
+  path: Assets/TowerDefence_Vsquad/Materials/Buildings/HM_House.mat
+  artifactKey: Guid(a4ec36d0dff9dde40a78324033b260b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TowerDefence_Vsquad/Materials/Buildings/HM_House.mat using Guid(a4ec36d0dff9dde40a78324033b260b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11e625a1edeff958db43d426cb9675e2') in 0.013180 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 8.130582 seconds.
+  path: Assets/TowerDefence_Vsquad/Meshes/Buildings/HM_House.fbx
+  artifactKey: Guid(7e73a1cb2bb563442acc6a926a955228) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TowerDefence_Vsquad/Meshes/Buildings/HM_House.fbx using Guid(7e73a1cb2bb563442acc6a926a955228) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d58f4953a4c3faeb56afb632450a825') in 0.024207 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 7.877661 seconds.
+  path: Assets/TowerDefence_Vsquad/Textures/M_Cannon.mat
+  artifactKey: Guid(b7911a3731c635d4ab69c169991ac6dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TowerDefence_Vsquad/Textures/M_Cannon.mat using Guid(b7911a3731c635d4ab69c169991ac6dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e2903ae8a9705ca8dcb81fce1bc9c8c') in 0.065064 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 35.655111 seconds.
+  path: Assets/TowerDefence_Vsquad/Meshes/Characters/Goblin/Test_animations/Goblin_death.FBX
+  artifactKey: Guid(9d9a3edb5004347409571c6785e30e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TowerDefence_Vsquad/Meshes/Characters/Goblin/Test_animations/Goblin_death.FBX using Guid(9d9a3edb5004347409571c6785e30e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2749678d6d1fafbe3d2467c87baf7584') in 0.065022 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 74
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/TowerDefence_Vsquad/Meshes/Characters/Goblin/Test_animations/Goblin_t_pose.FBX
+  artifactKey: Guid(ef7ff960f0bc4f94a993f80d1e51ba97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TowerDefence_Vsquad/Meshes/Characters/Goblin/Test_animations/Goblin_t_pose.FBX using Guid(ef7ff960f0bc4f94a993f80d1e51ba97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06b8e2b01a0b64160999cb1f844921f6') in 0.071333 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 73
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/TowerDefence_Vsquad/Meshes/Characters/Goblin/Test_animations/Goblin_run.fbx
+  artifactKey: Guid(1e85a4bc085ebaa48b9ca17dc63b9364) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TowerDefence_Vsquad/Meshes/Characters/Goblin/Test_animations/Goblin_run.fbx using Guid(1e85a4bc085ebaa48b9ca17dc63b9364) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e49b35e479289679be82d72d9c21c6c') in 0.097228 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 74
+========================================================================
+Received Import Request.
+  Time since last request: 20.621710 seconds.
+  path: Assets/TowerDefence_Vsquad/Materials/FX/HM_Fire_impact_additive.mat
+  artifactKey: Guid(8f0dc12ee8f38f540889475d4c3bbbe1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TowerDefence_Vsquad/Materials/FX/HM_Fire_impact_additive.mat using Guid(8f0dc12ee8f38f540889475d4c3bbbe1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57c6d14a20f719bad169cf12a4a0d167') in 0.037631 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/TowerDefence_Vsquad/Materials/FX/HM_smoke additive_2.mat
+  artifactKey: Guid(f1aea8343872cd041a9945f0de257526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TowerDefence_Vsquad/Materials/FX/HM_smoke additive_2.mat using Guid(f1aea8343872cd041a9945f0de257526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23fd3bdea73d86a9a568f2f7be9ec538') in 0.007963 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/TowerDefence_Vsquad/Materials/FX/HM_smoke blended.mat
+  artifactKey: Guid(c77f053355b8f1248bafbaaaad21f8c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TowerDefence_Vsquad/Materials/FX/HM_smoke blended.mat using Guid(c77f053355b8f1248bafbaaaad21f8c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85016404194d4b93b4e2b9dbbca2034d') in 0.011153 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.099410 seconds.
+  path: Assets/TowerDefence_Vsquad/Materials/Scene/Post-Processing Profile.asset
+  artifactKey: Guid(f6cbb6603473cf54eae29334680c7e61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TowerDefence_Vsquad/Materials/Scene/Post-Processing Profile.asset using Guid(f6cbb6603473cf54eae29334680c7e61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50f5053ff5ae7e3b4d85e270b3bb269a') in 0.001527 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/TowerDefence_Vsquad/Materials/Scene/Sky.mat
+  artifactKey: Guid(343e075ddd25f3343974c5ef47b87a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TowerDefence_Vsquad/Materials/Scene/Sky.mat using Guid(343e075ddd25f3343974c5ef47b87a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6e58cbcecfc0bf784af938ae4e2ac6f') in 0.006560 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: 스레드 종료 또는 응용 프로그램 요청 때문에 I/O 작업이 취소되었습니다.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
