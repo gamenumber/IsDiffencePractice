@@ -47,8 +47,8 @@ public class GuardianBuildManager : MonoBehaviour
 	// UpdateFindFocusTile을 찾는 함수 
 	private void UpdateFindFocusTile()
 	{
-		CurrentFocusTile = null;
-		Vector3 mousePosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.nearClipPlane));
+		CurrentFocusTile = null; // CurrentFocusTile를 null로 바꿈
+		Vector3 mousePosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.nearClipPlane)); // mousePosition을 마우스 포지션 x, y 가져와서 가까운 타일을 찾음
 		mousePosition.y = 0f;
 
 		foreach (var tile in Tiles)
