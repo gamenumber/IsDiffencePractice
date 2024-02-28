@@ -2,19 +2,19 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
-using UnityEngine.UI;
+using UnityEngine.Events; // Events를 사용할 때 필요한 네임스페이스
+using UnityEngine.UI; // UI를 사용할 때 필요한 네임스페이스 
 
 public class GuardianBuildManager : MonoBehaviour
 {
-	public GameObject[] Tiles;
+	public GameObject[] Tiles; // Tiles를 저장해놓을 배열 공간
 
-	public GameObject CurrentFocusTile;
-	public GameObject GuardianPrefab;
-	public GameObject BuildIconPrefab;
+	public GameObject CurrentFocusTile; // 현재 Focus를 두고 있는 Tile
+	public GameObject GuardianPrefab; // Guardian 프리팹
+	public GameObject BuildIconPrefab; // BuildIcon 프리팹
 
-	public Material BuildCanMat;
-	public Material BuildCanNotMat;
+	public Material BuildCanMat; // BuildCanMat 머터리얼
+	public Material BuildCanNotMat; // BuildCanNotMat 머터리얼
 
 	public float BuildDeltaY = 0f;
 	public float FocusTileDistance = 0.05f;
@@ -23,25 +23,28 @@ public class GuardianBuildManager : MonoBehaviour
 
 	public UnityEvent OnBuild;
 
+	// 게임을 시작 했을 때
 	void Start()
 	{
-		Tiles = GameObject.FindGameObjectsWithTag("Tile");
-		BuildIconPrefab = Instantiate(BuildIconPrefab, transform.position, Quaternion.Euler(90, 0, 0));
-		BuildIconPrefab.gameObject.SetActive(false);
+		Tiles = GameObject.FindGameObjectsWithTag("Tile"); // Tile 태그를 가진 여러 오브젝트를 배열 Tile에 할당함
+		BuildIconPrefab = Instantiate(BuildIconPrefab, transform.position, Quaternion.Euler(90, 0, 0)); // BuildIconPrefab생성 -> (X축으로 90도 가량 회전해서)
+		BuildIconPrefab.gameObject.SetActive(false); // BuildIconPrefab을 비활성화 시킴
 	}
 
 	void Update()
 	{
-		bool bisUpgrading = GameManager.Inst.guardianUpgradeManager.bIsUpgrading;
+		bool bisUpgrading = GameManager.Inst.guardianUpgradeManager.bIsUpgrading; // bisUpgrading 논리값을 GameManager.Inst.guardianUpgradeManager.bIsUpgrading값으로 할당시킴 
 
-		UpdateFindFocusTile();
-		if (!bisUpgrading)
+		UpdateFindFocusTile(); // UpdateFindFocusTile 함수 호출
+							  
+		if (!bisUpgrading) // 만약 bisUpgrading가 false라면 
 		{
-			UpdateBuildImage();
-			UpdateKeyInput();
+			UpdateBuildImage(); // UpdateBuildImage 함수 호출 
+			UpdateKeyInput(); // UpdateKeyInput 함수 호출 
 		}
 	}
 
+	// UpdateFindFocusTile을 찾는 함수 
 	private void UpdateFindFocusTile()
 	{
 		CurrentFocusTile = null;

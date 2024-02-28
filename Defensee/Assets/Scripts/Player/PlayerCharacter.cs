@@ -33,12 +33,13 @@ public class PlayerCharacter : MonoBehaviour
 	// 코인사용을 구현한 함수 
 	public void UseCoin(int coin)
 	{
-		Coin = Mathf.Clamp(Coin - coin, 0, int.MaxValue);
+		Coin = Mathf.Clamp(Coin - coin, 0, int.MaxValue); //  Coin - coin 값이 0과 int.MaxValue안에 값으로 고정함.
 	}
 
+	// 매개변수 coin을 이용해서 코인을 사용 할 수 있는지 여부를 결정함
 	public bool CanUseCoin(int coin)
 	{
-		return Coin >= coin;
+		return Coin >= coin; //  Coin 값이 coin 값보다 크거나 같다면 true, 그렇지 않다면 false를 반환하는 코드 
 	}
 
 }

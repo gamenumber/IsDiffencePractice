@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
 {
 	public static GameManager Inst // 싱글톤 패턴을 구현하여 Inst라는 이름으로 인스턴스(접근) 할 수 있게끔 함.
 	{
-		get; private set; // 자동 프로퍼티 -> 
+		get; private set; // 자동 프로퍼티 -> 클래스 내부에서만 설정 가능 & 이 프로퍼티를 이용해서 인스턴스를 얻을 수 있음. (멤버 변수의 은닉성과 캡슐화 문제점 때문에 쓰임)
 	}
 
 	public PlayerCharacter playerCharacter; // playerCharacter 가져오기
