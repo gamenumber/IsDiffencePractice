@@ -12,9 +12,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fa942ba2d8e8a1d439298facb535b2d8, type: 3}
+      propertyPath: m_TagString
+      value: Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fa942ba2d8e8a1d439298facb535b2d8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 15.809999
+      value: 12.21
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fa942ba2d8e8a1d439298facb535b2d8, type: 3}
       propertyPath: m_LocalPosition.y
@@ -67,6 +71,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: fa942ba2d8e8a1d439298facb535b2d8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4247871085026482880}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: fa942ba2d8e8a1d439298facb535b2d8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6229902269197227161}
   m_SourcePrefab: {fileID: 100100000, guid: fa942ba2d8e8a1d439298facb535b2d8, type: 3}
 --- !u!1 &4420982947981551199 stripped
 GameObject:
@@ -94,3 +101,16 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6229902269197227161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4420982947981551199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2250388448e1b746afa55299d80027d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OwnGuardian: {fileID: 0}

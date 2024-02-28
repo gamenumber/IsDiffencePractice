@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Projectile
+  - WayPoint
+  - Tile
   layers:
   - Default
   - TransparentFX

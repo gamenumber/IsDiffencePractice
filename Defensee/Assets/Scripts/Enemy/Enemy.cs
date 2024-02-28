@@ -60,7 +60,7 @@ public class Enemy : MonoBehaviour
 			if (_wayPointCount >= WayPoints.Length - 1)
 			{
 				// 플레이어에게 피해를 줌?
-				// GameManager.Inst.playerCharacter.Damaged(Damage);
+				GameManager.Inst.playerCharacter.Damaged(Damage);
 
 				// 적 제거
 				Destroy(gameObject);
