@@ -356,6 +356,7 @@
 "Assets/Scripts/Core/GameManager.cs"
 "Assets/Scripts/Core/GuardianBuildManager.cs"
 "Assets/Scripts/Core/GuardianUpgradeManager.cs"
+"Assets/Scripts/Core/PlayerUI.cs"
 "Assets/Scripts/Enemy/Enemy.cs"
 "Assets/Scripts/Guardian/Guardian.cs"
 "Assets/Scripts/Player/PlayerCharacter.cs"
