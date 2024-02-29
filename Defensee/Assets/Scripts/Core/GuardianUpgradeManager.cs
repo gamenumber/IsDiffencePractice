@@ -15,9 +15,9 @@
 		private Guardian _currentUpgradeGuardian; // 가디언 스크립트를 가져옴
 
 		public bool bIsUpgrading = false; // 업그레이드를 하는지에 따른 여부
-		private bool _isOnButtonHover = false; // 버튼이 눌렸는지 여부
+		private bool _isOnButtonHover = false; // 마우스 포인터가 버튼 위에 있는지 여부를 판단함
 
-		public void Start()
+	public void Start()
 		{
 			ShowUpgradeIconAndRange(false); // ShowUpgradeIconAndRange값을 false로 바꿈
 			GameManager.Inst.guardianBuildManager.OnBuild.AddListener(() => ShowUpgradeIconAndRange(false)); // OnBuild 함수가 호출되면 ShowUpgradeIconAndRange(false) -> 이렇게 호출됨
@@ -74,13 +74,13 @@
 		// 만약 마우스 포인터가 눌리면
 		public void OnPointerEnter()
 		{
-			_isOnButtonHover = true; // 포인터가 붙어있다(true)로 표시 
+			_isOnButtonHover = true; // 마우스 포인터가 버튼 위에 있다
 		}
 
 		// 만약 마우스 포인터가 때어지면
 		public void OnPointerExit()
 		{
-			_isOnButtonHover = false; // 포인터가 때어졌다(false)로 표시
+			_isOnButtonHover = false; // 마우스 포인터가 버튼 위에 없다
 		}
 
 		// 키 입력을 업데이트하는 함수
