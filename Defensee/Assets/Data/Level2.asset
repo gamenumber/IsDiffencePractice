@@ -15,6 +15,6 @@ MonoBehaviour:
   AttackCycleTime: 0.3
   AttackRadius: 7
   Damage: 2
-  MaxTargetCount: 1
-  UpgradeCost: 100
-  Color: {r: 1, g: 1, b: 1, a: 1}
+  MaxTargetCount: 2
+  UpgradeCost: 50
+  Color: {r: 0.07662869, g: 0.7083315, b: 0.7735849, a: 1}

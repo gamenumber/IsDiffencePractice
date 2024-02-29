@@ -2544,7 +2544,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 07bb7a18435a61448b3b781d7a61cf6b, type: 2}
   AttackRangeImg: {fileID: 764762872}
   UpgradeIconButton: {fileID: 2090377033}
-  bIsUpgrading: 0
+  bIsUpgrading: 1
 --- !u!1001 &471379497
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3391,8 +3391,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
