@@ -119,34 +119,46 @@ public class GuardianBuildManager : MonoBehaviour
 		BuildIconPrefab.gameObject.SetActive(false); // BuildIconPrefab을 비활성화
 	}
 
-	// 가디언을 건설하고 확인하는 함수
 	void CheckToBuildGuardian()
 	{
+		// 현재 초점이 맞춰진 타일이 있는지 확인
 		if (CurrentFocusTile != null)
 		{
+			// 현재 타일에 대한 정보를 가져옴
 			Tile tile = CurrentFocusTile.GetComponent<Tile>();
+			// 플레이어 캐릭터 및 Guardian 업그레이드 매니저에 접근
 			PlayerCharacter player = GameManager.Inst.playerCharacter;
+
+			// 만약 해당 타일이 소유되지 않았고, 플레이어가 코인을 사용할 수 있다면
 			if (!tile.CheckIsOwned() && player.CanUseCoin(NormalGuardianCost))
 			{
+				// 플레이어의 코인 감소
 				player.UseCoin(NormalGuardianCost);
 
+				// 건설 아이콘의 위치를 가져오고 Guardian을 해당 위치에 생성
 				Vector3 position = BuildIconPrefab.transform.position;
 				GameObject guardianInst = Instantiate(GuardianPrefab, position, Quaternion.identity);
 
+				// 타일에 Guardian 할당
 				tile.OwnGuardian = guardianInst.GetComponent<Guardian>();
 
-				OnBuild.Invoke(); // 건설 이벤트 호출
-				DeActivateBuildImage(); // 건설 완료 후 빌드 이미지 비활성화
+				// 건설 완료 이벤트 호출
+				OnBuild.Invoke();
+				// 건설 완료 후 빌드 이미지 비활성화
+				DeActivateBuildImage();
 
 				return;
 			}
 
+			// 이미 타일이 소유되어 있고 해당 Guardian이 존재하는 경우
 			if (tile && tile.OwnGuardian)
 			{
+				// Guardian 업그레이드 매니저를 통해 Guardian 업그레이드 수행
 				GameManager.Inst.guardianUpgradeManager.UpgradeGuardian(tile.OwnGuardian);
 			}
 		}
 	}
+
 
 	// 키 입력을 업데이트하는 함수
 	private void UpdateKeyInput()
