@@ -143,7 +143,7 @@ public class GuardianBuildManager : MonoBehaviour
 
 			if (tile && tile.OwnGuardian)
 			{
-				//GameManager.Inst.guardianUpgradeManager.UpgradeGuardian(tile.OwnGuardian);
+				GameManager.Inst.guardianUpgradeManager.UpgradeGuardian(tile.OwnGuardian);
 			}
 		}
 	}

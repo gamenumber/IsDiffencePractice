@@ -48,8 +48,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Projectile: {fileID: 2601086595413494717, guid: 23c5e5cd000e8074393d52fb1bab6719, type: 3}
-  GuardianStatus: {fileID: 0}
-  GuardianRenderer: {fileID: 0}
+  GuardianStatus: {fileID: 11400000, guid: 4e805dc9119b564418bb5c00f3c69dfb, type: 2}
+  GuardianRenderer: {fileID: 1074456324094930594}
   Level: 1
 --- !u!54 &1450042324676564382
 Rigidbody:
@@ -164,6 +164,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31b5711eb7fc9e74c9b9596af3800686, type: 3}
+--- !u!23 &1074456324094930594 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2300000, guid: 31b5711eb7fc9e74c9b9596af3800686, type: 3}
+  m_PrefabInstance: {fileID: 1074456324097095362}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1074456324097223744 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 31b5711eb7fc9e74c9b9596af3800686, type: 3}

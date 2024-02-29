@@ -103,7 +103,7 @@ public class Enemy : MonoBehaviour
 				gameObject.SetActive(false);
 
 				// 이건 잘 모르겠지만, StealCoin 이라는 것을 봐서 아마도 적이 죽었을 때 플레이어가 코인을 얻는 것 같음
-				// GameManager.Inst.EnemyDead(StealCoin);
+				GameManager.Inst.EnemyDead(StealCoin);
 
 				// 적 제거
 				Destroy(gameObject);
