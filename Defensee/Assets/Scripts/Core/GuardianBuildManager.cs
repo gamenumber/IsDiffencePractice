@@ -45,7 +45,7 @@ public class GuardianBuildManager : MonoBehaviour
 
 	void Update()
 	{
-		bool bisUpgrading = GameManager.Inst.guardianUpgradeManager.bIsUpgrading; // Guardian 업그레이드 중인지 확인하는 변수
+		bool bisUpgrading = GameManager.Inst.guardianUpgradeManager.bIsUpgrading; // GameManager.Inst.guardianUpgradeManager.bIsUpgrading 이걸 bisUpgrading 여기에 할당함
 
 		UpdateFindFocusTile(); // 초점이 맞춰진 타일 업데이트 함수 호출
 
@@ -66,13 +66,15 @@ public class GuardianBuildManager : MonoBehaviour
 		mousePosition.y = 0f; // Y 좌표를 0으로 설정하여 3D 공간 상의 평면상으로 이룸
 
 		// 모든 타일에 대해 반복문 실행 -> 순회
+		// Tiles는 배열내부에 있는 모든 타일들을 나타냄 tile은 각 순회에서 현재 처리 중인 타일을 나타내는 변수로 foreach문에 쓰였음
+		// 단일 타일만 검사하면 게임 상에 여러개의 타일이 존재할 때 어떤 타일이 마우스 위치와 가장 가까운지 알 수 없으므로, 순회를 통해 모든 타일에 대해 거리를 계산하고 비교함으로써 최적의 타일을 찾아내는 작업을 거침
 		foreach (var tile in Tiles)
 		{
 			// 현재 타일의 위치를 가져와서 Y 좌표를 0으로 설정하여 3D 공간 상의 평면상으로 이룸
 			Vector3 tilePos = tile.transform.position;
 			tilePos.y = 0f;
 
-			// 마우스 위치와 타일의 위치 간의 거리가 설정한 최대 거리 이내라면
+			// mousePosition과 tilePos 간의 거리가 FocusTileDistance 이내라면
 			if (Vector3.Distance(mousePosition, tilePos) <= FocusTileDistance)
 			{
 				CurrentFocusTile = tile; // 현재 초점 타일을 해당 타일로 설정하고 반복문 종료
@@ -98,7 +100,7 @@ public class GuardianBuildManager : MonoBehaviour
 				bFocusTile = true; // 초점이 맞춰진 타일이 발견됨
 
 				bool bCanBuild = GameManager.Inst.playerCharacter.CanUseCoin(NormalGuardianCost); // 코인으로 가디언 건설 가능 여부 확인
-				Material mat = bCanBuild ? BuildCanMat : BuildCanNotMat; // 건설 가능 여부에 따라 머터리얼 선택
+				Material mat = bCanBuild ? BuildCanMat : BuildCanNotMat; // 건설 가능 여부에 따라 머터리얼 바꾸기
 				BuildIconPrefab.GetComponent<MeshRenderer>().material = mat; // 빌드 아이콘의 머터리얼 설정
 			}
 		}
@@ -113,7 +115,6 @@ public class GuardianBuildManager : MonoBehaviour
 		}
 	}
 
-	// 빌드 이미지를 비활성화하는 함수
 	private void DeActivateBuildImage()
 	{
 		BuildIconPrefab.gameObject.SetActive(false); // BuildIconPrefab을 비활성화
@@ -126,7 +127,7 @@ public class GuardianBuildManager : MonoBehaviour
 		{
 			// 현재 타일에 대한 정보를 가져옴
 			Tile tile = CurrentFocusTile.GetComponent<Tile>();
-			// 플레이어 캐릭터 및 Guardian 업그레이드 매니저에 접근
+			// 플레이어 캐릭터에 접근
 			PlayerCharacter player = GameManager.Inst.playerCharacter;
 
 			// 만약 해당 타일이 소유되지 않았고, 플레이어가 코인을 사용할 수 있다면
