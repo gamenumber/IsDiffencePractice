@@ -13,6 +13,10 @@ PrefabInstance:
       value: Cube
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: fa942ba2d8e8a1d439298facb535b2d8, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fa942ba2d8e8a1d439298facb535b2d8, type: 3}
       propertyPath: m_TagString
       value: Tile
       objectReference: {fileID: 0}
@@ -95,7 +99,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3

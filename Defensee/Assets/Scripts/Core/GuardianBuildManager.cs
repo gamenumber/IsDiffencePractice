@@ -59,7 +59,7 @@ public class GuardianBuildManager : MonoBehaviour
 	// 초점이 맞춰진 타일을 찾는 함수
 	private void UpdateFindFocusTile()
 	{
-		CurrentFocusTile = null; // 현재 초점 타일을 초기화
+		/*CurrentFocusTile = null; // 현재 초점 타일을 초기화
 
 		// 현재 마우스 위치를 화면에서 월드 좌표로 변환하여 가져옴
 		Vector3 mousePosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.nearClipPlane));
@@ -80,7 +80,26 @@ public class GuardianBuildManager : MonoBehaviour
 				CurrentFocusTile = tile; // 현재 초점 타일을 해당 타일로 설정하고 반복문 종료
 				break;
 			}
+		} */
+
+
+
+		CurrentFocusTile = null; // 현재 초점 타일을 초기화
+
+		// 마우스 포지션을 스크린 좌표에서 월드 좌표로 변환
+		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+		RaycastHit hitInfo;
+		// RayCast를 통해 타일과의 충돌 검사
+		if (Physics.Raycast(ray, out hitInfo, 100, LayerMask.GetMask("Tile")))
+		{
+			// 충돌한 오브젝트가 타일인 경우
+			if (hitInfo.collider.CompareTag("Tile"))
+			{
+				// 충돌한 타일을 현재 포커스 타일로 설정
+				CurrentFocusTile = hitInfo.collider.gameObject;
+			}
 		}
+
 	}
 
 
